@@ -337,8 +337,20 @@ def num_r_a_t(x):
             num+=1
         print()
 main()
-'''
 
+
+
+
+
+
+
+
+
+A
+AB
+ABC
+ABCD
+ABCDE
 def main():
     n=int(input("enter n:"))
     alphabet_triangle(n)
@@ -346,6 +358,79 @@ def alphabet_triangle(x):
     for i in range(1,x+1):
         ch=65
         for j in range(1,i+1):
+            print(chr(ch),end="")
+            ch+=1
+        print()
+main()
+
+
+
+
+
+
+
+
+ABCDE
+ABCD
+ABC
+AB
+A
+def main():
+    n=int(input("enter n:"))
+    alphabet_triangle(n)
+def alphabet_triangle(x):
+    for i in range(x,0,-1):
+        ch=65
+        for j in range(1,i+1):
+            print(chr(ch),end="")
+            ch+=1
+        print()
+main()
+
+
+
+
+
+
+
+
+
+A
+BB
+CCC
+DDDD
+EEEEE
+def main():
+    n=int(input("enter n:"))
+    alphabet_tri2(n)
+def alphabet_tri2(x):
+    ch=65
+    for i in range(1,x+1):
+        for j in range(1,i+1):
+            print(chr(ch),end="")
+        ch+=1
+        print()
+main()
+'''
+
+
+# n=int(input("enter n:"))
+# for i in range(1,n+1):
+#     for j in range(n-i):
+#         print(" ",end="")
+#     for k in range((2*i)-1):
+#         print("*",end="")
+#     print()
+
+def main():
+    n=int(input("enter n:"))
+    alphabet_pyramid(n)
+def alphabet_pyramid(x):
+    ch=65
+    for i in range(1,x+1):
+        for j in range(x-i):
+            print(" ",end="")
+        for k in range((2*i)-1):
             print(chr(ch),end="")
             ch+=1
         print()
