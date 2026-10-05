@@ -422,16 +422,17 @@ main()
 #         print("*",end="")
 #     print()
 
+
+
+
+
 def main():
     n=int(input("enter n:"))
-    alphabet_pyramid(n)
-def alphabet_pyramid(x):
-    ch=65
+    pattern(n)
+def pattern(x):
     for i in range(1,x+1):
-        for j in range(x-i):
-            print(" ",end="")
-        for k in range((2*i)-1):
-            print(chr(ch),end="")
-            ch+=1
+        for j in range(i):
+            print((i+j)%2,end="")
         print()
 main()
+
