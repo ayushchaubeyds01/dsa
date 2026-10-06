@@ -414,25 +414,18 @@ main()
 '''
 
 
-# n=int(input("enter n:"))
-# for i in range(1,n+1):
-#     for j in range(n-i):
-#         print(" ",end="")
-#     for k in range((2*i)-1):
-#         print("*",end="")
-#     print()
 
 
 
 
-
-def main():
-    n=int(input("enter n:"))
-    pattern(n)
-def pattern(x):
-    for i in range(1,x+1):
-        for j in range(i):
-            print((i+j)%2,end="")
-        print()
-main()
-
+n=int(input("enter n:"))
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(j,end="")
+    for _ in range(n-i):
+        print(" ",end="")
+    for _ in range(n-i):
+        print(" ",end="")
+    for l in range(i,0,-1):
+        print(l,end="")
+    print()
