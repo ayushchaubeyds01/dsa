@@ -627,6 +627,7 @@ main()
 4 3 2 2 2 3 4 
 4 3 3 3 3 3 4 
 4 4 4 4 4 4 4 
+'''
 def main():
     n=int(input("Enter  n:"))
     number_square(n)
@@ -646,4 +647,3 @@ def number_square(x):
                 print(" ",end=" ")
         print()
 main()
-'''
